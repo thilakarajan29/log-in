@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.navbar h1 {
+  color: black;
+}
+
+.navbar p {
+  font-size: 15px;
+}
+
+.navbar a{
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  cursor: pointer;
+}
+
+.main{
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin: auto auto;
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main h1{
+  margin: auto;
+}
+
+.main .names{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  margin: 30px auto 15px auto;
+}
+
+.main .email-pass{
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85px;
+  width: 500px;
+}
+
+.main input{
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  &:focus{
+    outline: none;
+  }
+}
+
+.dropbtn{
+  border: 1px solid grey;
+  width: 500px;
+  height: 28px;
+  margin: 15px auto 0px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: var(--speed) ease;
+  border: 1px solid grey;
+  width: 500px;
+  margin: 0px auto;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+  margin: 0px;
+}
+
+.check-box-div a{
+  color: blue;
+  text-decoration: none;
+}
+
+.check-box-div{
+  width: 500px;
+  height: 80px;
+  margin: 0px auto 15px;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.check-box{
+  margin-right: 10px;
+}
+
+.create-btn button{
+  width: 500px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: blue;
+  color: white;
+}
+
+.create-btn{
+  margin: 0px auto;
+}
+
+.alter{
+  margin: 15px auto 0px;
+
+}
+
+.alter a{
+  text-decoration: none;
+  color: blue;
+}
